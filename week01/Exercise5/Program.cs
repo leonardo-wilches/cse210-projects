@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        //Exercise 5 - Leonardo Wilches
+
         DisplayWelcome();
 
         string inputName = PromptUserName();
