@@ -4,6 +4,28 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Exercise 3 - Leonardo Wilches
+
+        //Part 1, asking for the magic number and if statement
+        //Console.Write("What is the magic number? ");
+        //string number = Console.ReadLine();
+        //Console.Write("What is your guess? ");
+        //string guess = Console.ReadLine();
+
+        //if (number == guess)
+        //{
+        //    Console.WriteLine($"You guessed it!");
+        //}
+        //else if (number < guess)
+        //{
+        //    Console.WriteLine("Higher");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Lower");
+        //}
+
+        //Part 2 and 3, loop and a generated random number
         string answer = null;
 
         do
