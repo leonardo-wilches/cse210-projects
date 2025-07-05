@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Exercise 1 - Leonardo Wilches
+
         Console.Write("What is your first name? ");
         string firstNamed = Console.ReadLine();
 
