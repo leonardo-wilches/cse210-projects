@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        // exercise 2 - Leonardo Wilches
+
         Console.Write("What is your grade percentaje?: ");
         string input = Console.ReadLine();
         int grade = int.Parse(input);
@@ -12,6 +14,8 @@ class Program
 
         int gradeDivided = grade % 10;
         string sign = null;
+
+        // Grade Calculation
 
         if (grade >= 90)
         {
@@ -34,11 +38,13 @@ class Program
             letter = "F";
         }
 
-        if (gradeDivided >= 7 && grade < 97 && grade > 53)
+        // Letter Calculation
+
+        if (gradeDivided >= 7 && grade < 93 && grade >= 67)
         {
             sign = "+";
         }
-        else if (gradeDivided < 3 && grade > 53)
+        else if (gradeDivided < 3 && grade >= 60 && grade != 100)
         {
             sign = "-";
         }
