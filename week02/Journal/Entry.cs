@@ -6,6 +6,12 @@ public class Entry
 
     public void Display()
     {
+        _date = DateTime.Now.ToShortDateString();
 
+        PromptGenerator generator = new PromptGenerator();
+        _promptText = generator.GetRandomPrompt();
+        Console.WriteLine(_promptText);
+
+        _entryText = Console.ReadLine();
     }
 }
