@@ -11,7 +11,6 @@ public class Journal
     {
         foreach (Entry display in _entries)
         {
-            Console.WriteLine("");
             Console.WriteLine(display._date);
             Console.WriteLine(display._promptText);
             Console.WriteLine(display._entryText);
@@ -31,7 +30,8 @@ public class Journal
                 outputFile.WriteLine("");
             }
         }
-        Console.WriteLine("Your file was save");
+        Console.WriteLine("Your file was save.");
+        Console.WriteLine("");
     }
 
     public void LoadToFile(string file)
@@ -52,10 +52,12 @@ public class Journal
         }
 
         Console.WriteLine("File loaded.");
+        Console.WriteLine("");
     }
     else
     {
         Console.WriteLine("The file don't exist.");
+        Console.WriteLine("");
     }
     }
 
