@@ -2,6 +2,8 @@ using System;
 
 class Program
 {
+    //Leonardo Wilches - W03 Project: Scripture Memorizer Program
+
     // To add creativity I added a section where you have to guess the Scripture.
     // Therefore there are 2 activities, one rune to memorize and another to guess.
     static void Main(string[] args)
