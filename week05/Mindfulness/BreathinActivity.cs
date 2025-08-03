@@ -8,7 +8,7 @@ public class BreathingActivity : Activity
     public void Run()
     {
         DisplayStartingMessage();
-        Console.WriteLine("Get Ready");
+        Console.WriteLine("Get Ready...");
         ShowSpinner(5);
 
         DateTime startTime = DateTime.Now;
