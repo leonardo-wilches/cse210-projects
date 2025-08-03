@@ -27,6 +27,23 @@ class Program
                 RefletingActivity a2 = new RefletingActivity("Reflection Activity", "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.", 0);
                 a2.Run();
             }
+            else if (menu == "3")
+            {
+                ListingActivity a3 = new ListingActivity("Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.", 0);
+                a3.Run();
+            }
+            else
+            {
+                if (menu != "4")
+                {
+                    Console.WriteLine("Please enter a valid option.");
+                    Console.WriteLine("Press Enter to continue.");
+                    Console.ReadLine();
+                    Console.Clear();
+                }
+            }
         }
+
+        Console.WriteLine("Thanks! Come back soon.");
     }
 }
