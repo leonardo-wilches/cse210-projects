@@ -2,7 +2,7 @@ using System;
 
 class Program
 {
-    // Leonardo Wilches - W05 Mindfilness Program
+    // Leonardo Wilches - W05 Mindfulness Program
     // To add creativity, I included two more activities: one listing things you're grateful for and another stretching session.
 
     static void Main(string[] args)
