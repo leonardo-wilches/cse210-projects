@@ -1,17 +1,20 @@
-public class ListingActivity : Activity
+public class GratitudeActivity : Activity
 {
     private int _count;
-    private List<string> _prompts;
+    private List<string> _blessingPrompts;
 
-    public ListingActivity(string name, string description, int duration) : base(name, description, duration)
+    public GratitudeActivity(string name, string description, int duration) : base(name, description, duration)
     {
-        _prompts = new List<string>
+        _blessingPrompts = new List<string>
         {
-            "--- Who are people that you appreciate? ---",
-            "--- What are personal strengths of yours? ---",
-            "--- Who are people that you have helped this week? ---",
-            "--- When have you felt the Holy Ghost this month? ---",
-            "--- Who are some of your personal heroes? ---"
+            "--- What are you thankful for today? ---",
+            "--- What talents are you grateful for? ---",
+            "--- What blessings have you received today? ---",
+            "--- What things are you thankful for this year? ---",
+            "--- What things are you grateful for in your life? ---",
+            "--- What people in your life are you grateful for? ---",
+            "--- What blessings of the Gospel have you received in your life? ---",
+            "--- What are you thankful for now? ---"
         };
     }
 
@@ -21,7 +24,7 @@ public class ListingActivity : Activity
         Console.WriteLine("Get Ready...");
         ShowSpinner(5);
 
-        Console.WriteLine("\nList as many responses you can to the following prompt:");
+        Console.WriteLine("\nList as many blessings you can to the following prompt:");
         GetRandomPrompt();
 
         Console.Write("You may begin in: ");
@@ -33,7 +36,7 @@ public class ListingActivity : Activity
 
         List<string> entries = GetListFromUser();
         _count = entries.Count;
-        Console.WriteLine($"\nYou listed {_count} items!");
+        Console.WriteLine($"\nYou listed {_count} blessings!");
 
         DisplayEndingMessage();
         ShowSpinner(5);
@@ -44,8 +47,8 @@ public class ListingActivity : Activity
     public void GetRandomPrompt()
     {
         Random random = new Random();
-        int i = random.Next(_prompts.Count);
-        string selectedPrompt = _prompts[i];
+        int i = random.Next(_blessingPrompts.Count);
+        string selectedPrompt = _blessingPrompts[i];
         Console.WriteLine(selectedPrompt);
     }
 
